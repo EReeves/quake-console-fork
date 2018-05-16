@@ -10,18 +10,24 @@
 
 #-------------------------------- References --------------------------------#
 
+/reference:../../../packages/InfinitespaceStudios.Pipeline.1.0.9/tools/InfinitespaceStudios.Pipeline.dll
+/reference:../../../packages/InfinitespaceStudios.Pipeline.1.0.9/tools/Newtonsoft.Json.dll
 
 #---------------------------------- Content ---------------------------------#
 
 #begin qc_background.fx
 /importer:EffectImporter
-/processor:EffectProcessor
+/processor:RemoteEffectProcessor
+/processorParam:RemoteAddress=pipeline.infinitespace-studios.co.uk
+/processorParam:RemotePort=443
+/processorParam:Protocol=https
 /processorParam:DebugMode=Auto
 /build:qc_background.fx
 
 #begin qc_console.spritefont
 /importer:FontDescriptionImporter
 /processor:FontDescriptionProcessor
+/processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
 /build:qc_console.spritefont
 
