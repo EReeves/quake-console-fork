@@ -79,8 +79,9 @@
     <Compile Include="Utilities\Timer.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="MonoGame.Framework, Version=3.7.0.1522, Culture=neutral, PublicKeyToken=null">
-      <HintPath>..\..\packages\MonoGame.Framework.Portable.3.7.0.1522-develop\lib\portable-net45+win8+wpa81\MonoGame.Framework.dll</HintPath>
+    <Reference Include="MonoGame.Framework, Version=3.6.0.1625, Culture=neutral, PublicKeyToken=null">
+      <HintPath>..\..\packages\MonoGame.Framework.DesktopGL.3.6.0.1625\lib\net40\MonoGame.Framework.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
   </ItemGroup>
@@ -91,6 +92,7 @@
     <None Include="Content\bin\DesktopGL\qc_console.xnb" />
     <None Include="Content\qc_background.fx" />
     <None Include="Content\qc_console.spritefont" />
+    <None Include="MonoGame.Framework.dll.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
